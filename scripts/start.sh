@@ -8,6 +8,9 @@ if [ ! -f settings.conf ]; then
     echo "Please rerun this script to continue..."
     exit 1
 else
+    echo "Entering environment..."
+    sleep 1
+    source .env/bin/activate
     echo "Running bot..."
     python src/main.py
 fi
