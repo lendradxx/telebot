@@ -8,7 +8,7 @@ if __name__ == "__main__":
     # Print Info Bot
     core.printHeaderLine("=")
     print(f"BOT NAME: @{bot.get_me().username}")
-    print(f"PREFIX: {core.getConfig('BOT', 'PREFUX')}")
+    print(f"PREFIX: {core.getConfig('BOT', 'PREFIX')}")
     core.printHeaderLine("=")
 
     # Handling message
