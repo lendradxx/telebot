@@ -15,17 +15,10 @@ def lateMsg(date: int):
         return False
 
 
-def createLine(line: str, length: int):
+def printHeaderLine(line: str):
+    terminalSize = os.get_terminal_size()
     resultLine = ""
-    for i in range(0, length):
+    for i in range(terminalSize.columns):
         resultLine += line
 
-    return resultLine
-
-
-def printHeader(headerTitle: str):
-    terminalSize = os.get_terminal_size()
-    lengthLine = int((terminalSize.columns / 2) - len(headerTitle))
-    beginLine = createLine("=", length=lengthLine)
-    endLine = createLine("=", length=lengthLine)
-    print(f"{beginLine}{headerTitle}{endLine}")
+    print(resultLine)
