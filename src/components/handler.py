@@ -7,8 +7,6 @@ def textHandler(bot: TeleBot, msg: types.Message):
 
     if command == "hello":
         bot.reply_to(msg, "Hello!")
-    elif command == "yo":
-        bot.reply_to(msg, "Yo!")
     elif command == "say":
         bot.send_message(msg.chat.id, " ".join(args))
     else:
