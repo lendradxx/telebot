@@ -1,4 +1,6 @@
-if [ ! -f settings.conf ]; then   
+export PYTHONDONTWRITEBYTECODE=1
+
+if [ ! -f settings.conf ]; then
     read -p "Enter your Token: " TOKEN
     read -p "Enter your Prefix: " PREFIX
     echo "Writing Configuration..."
