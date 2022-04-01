@@ -19,4 +19,5 @@ if __name__ == "__main__":
         handler.textHandler(bot=bot, msg=message)
 
     print("[LOG]: Listening")
+    core.printHeaderLine("=")
     bot.infinity_polling(skip_pending=True)
